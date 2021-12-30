@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<TabPane fx:id="bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.plungr.plungrController" style="-fx-background-color: navy blue;">
+  <tabs>
+    <Tab text="Linear Expansion">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="cleCoeff" layoutX="287.0" layoutY="52.0" />
+                  <TextField fx:id="cleTemp" layoutX="287.0" layoutY="104.0" />
+                  <Label layoutX="56.0" layoutY="57.0" text="Co-Efficient of Linear Expansion" />
+                  <Label layoutX="56.0" layoutY="109.0" text="Change in Temperature (Celsius)" />
+                   <TextField fx:id="cleLength" layoutX="287.0" layoutY="150.0" />
+                   <Label layoutX="56.0" layoutY="155.0" text="Initial Length (m)" />
+                   <Button layoutX="393.0" layoutY="197.0" mnemonicParsing="false" onAction="#calcCLE" text="Calculate" />
+                   <Label layoutX="56.0" layoutY="248.0" text="Linear Expansion (mm)" />
+                   <TextField fx:id="cleResult" layoutX="287.0" layoutY="243.0" disable="true"/>
+
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Heat Loss">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+      <Tab text="Pipe Sizing">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -11,6 +11,6 @@ module com.example.demo {
     requires eu.hansolo.tilesfx;
     requires javafx.graphics;
 
-    opens com.example.demo to javafx.fxml;
-    exports com.example.demo;
+    opens com.example.plungr to javafx.fxml;
+    exports com.example.plungr;
 }
