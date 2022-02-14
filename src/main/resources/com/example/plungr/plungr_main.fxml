@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 
-<TabPane fx:id="bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.plungr.plungrController" style="-fx-background-color: navy blue;">
+<TabPane fx:id="bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.plungr.plungrController">
   <tabs>
     <Tab text="Linear Expansion">
       <content>
@@ -19,14 +19,42 @@
                    <Label layoutX="56.0" layoutY="155.0" text="Initial Length (m)" />
                    <Button layoutX="393.0" layoutY="197.0" mnemonicParsing="false" onAction="#calcCLE" text="Calculate" />
                    <Label layoutX="56.0" layoutY="248.0" text="Linear Expansion (mm)" />
-                   <TextField fx:id="cleResult" layoutX="287.0" layoutY="243.0" disable="true"/>
+                   <TextField fx:id="cleResult" disable="true" layoutX="287.0" layoutY="243.0" />
 
                </children></AnchorPane>
       </content>
     </Tab>
     <Tab text="Heat Loss">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="600.0">
+               <children>
+                  <TextField layoutX="237.0" layoutY="89.0" />
+                  <TextField layoutX="236.0" layoutY="143.0" />
+                  <TextField layoutX="236.0" layoutY="197.0" />
+                  <Label layoutX="28.0" layoutY="26.0" text="Above the Room:" />
+                  <Label layoutX="29.0" layoutY="122.0" text="No. of Outside Walls:" />
+                  <Label layoutX="27.0" layoutY="237.0" text="Type of Room:" />
+                  <Label layoutX="25.0" layoutY="295.0" text="Outside Wall Type:" />
+                  <TextField layoutX="237.0" layoutY="254.0" />
+                  <Label layoutX="236.0" layoutY="73.0" text="Length of Room (m):" />
+                  <Label layoutX="236.0" layoutY="122.0" text="Height of Room (m):" />
+                  <Label layoutX="236.0" layoutY="179.0" text="Window Area (sq.m):" />
+                  <Label layoutX="238.0" layoutY="237.0" text="Width of Room (m):" />
+                  <Label layoutX="29.0" layoutY="73.0" text="Below the Room:" />
+                  <Label layoutX="29.0" layoutY="179.0" text="Window Type" />
+                  <ChoiceBox layoutX="29.0" layoutY="39.0" prefWidth="150.0" />
+                  <ChoiceBox layoutX="29.0" layoutY="89.0" prefWidth="150.0" />
+                  <ChoiceBox layoutX="29.0" layoutY="143.0" prefWidth="150.0" />
+                  <ChoiceBox layoutX="29.0" layoutY="197.0" prefWidth="150.0" />
+                  <ChoiceBox layoutX="29.0" layoutY="254.0" prefWidth="150.0" />
+                  <ChoiceBox layoutX="29.0" layoutY="312.0" prefWidth="150.0" />
+                  <Label layoutX="479.0" layoutY="122.0" text="Unit" />
+                  <TextField layoutX="428.0" layoutY="254.0" />
+                  <Slider layoutX="432.0" layoutY="149.0" />
+                  <Label layoutX="432.0" layoutY="171.0" text="Watts" />
+                  <Label layoutX="544.0" layoutY="171.0" text="BTUs" />
+                  <Label layoutX="428.0" layoutY="237.0" text="Heat Loss:" />
+               </children></AnchorPane>
       </content>
     </Tab>
       <Tab text="Pipe Sizing">
